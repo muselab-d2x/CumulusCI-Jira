@@ -10,7 +10,23 @@
 
 
 A plugin for CumulusCI that adds a service to connect to Atlassian's Jira including an integration with CumulusCI's release notes parser
+# WARNING: This installs a non-production release of CumulusCI and experimental plugin code
+```
+pip install git+https://github.com/muselab-d2x/CumulusCI-Jira
+```
 
+Add the following to your cumulusci.yml file to enable the plugin:
+```
+plugins:
+    - cumulusci_jira
+```
+
+## Reset your CumulusCI:
+```
+pip uninstall cumulusci_jira
+pip uninstall cumulusci
+pip install cumulusci
+```
 
 - Free software: BSD-3-Clause
 - Documentation: https://jlantz.github.io/CumulusCI-Jira.
