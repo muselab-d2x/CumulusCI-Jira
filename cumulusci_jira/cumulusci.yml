@@ -1,0 +1,14 @@
+services:
+  jira:
+    description: Credentials used to connect to Jira
+    attributes:
+      url:
+        description: Base URL of the Jira instance
+        required: True
+      username:
+        description: Username used to connect to Jira
+        required: True
+      api_token:
+        description: API Token used to connect to Jira. See https://id.atlassian.com/manage-profile/security/api-tokens to generate a token.
+        required: True
+        sensitive: True

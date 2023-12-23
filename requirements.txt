@@ -1,0 +1,3 @@
+cumulusci @ git+https://github.com/muselab-d2x/CumulusCI@2e78be9bea4e9c33bf8bfbaf2dfa659584683f5d # FIXME: This is a temporary hack using a non-production release version of CumulusCI with plugin support
+setuptools>=69.0.2
+atlassian-python-api>=3.41.4

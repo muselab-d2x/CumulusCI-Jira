@@ -1,0 +1,34 @@
+[tool]
+
+[tool.poetry]
+name = "cumulusci_jira"
+version = "0.0.0"
+homepage = "https://github.com/muselab-d2x/CumulusCI-Jira"
+description = "A plugin for CumulusCI that adds a service to connect to Atlassian's Jira including an integration with CumulusCI's release notes parser"
+authors = ["Jason Lantz <jason@muselab.com>"]
+readme = "README.md"
+license =  "BSD-3-Clause"
+classifiers=[
+    'License :: OSI Approved :: BSD License',
+    'Natural Language :: English',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+]
+include = [
+    "LICENSE",
+    "cumulusci_jira/py.typed"
+]
+
+[tool.black]
+line-length=100
+
+[tool.pylint.reports]
+output-format="colorized"
+reports="y"
+include-ids="yes"
+msg-template="{msg_id}:{line:3d},{column}: {obj}: {msg}"
+
+[tool.pytest.ini_options]
+addopts = "--cov=cumulusci_jira --cov-branch --cov-report term-missing  -vv --color=yes --cov-fail-under 100"
+python_files = "tests.py test_*.py *_tests.py"

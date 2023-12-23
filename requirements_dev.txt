@@ -1,0 +1,4 @@
+-r requirements.txt
+-e .
+pytest-cov >= 4.1.0
+pyvcr >= 5.1.0
