@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"CumulusCI JIRA Plugin","text":"<p>A plugin for CumulusCI that adds a service to connect to Atlassian's Jira including an integration with CumulusCI's release notes parser</p>"}]}
